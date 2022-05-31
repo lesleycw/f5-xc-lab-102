@@ -27,13 +27,13 @@ steps will define an application, register its DNS and assign a target as an ori
 +----------------------------------------------------------------------------------------------+
 | 1. In the left-hand navigation expand **Manage** and click **Load Balancers > HTTP Load**    |
 |                                                                                              |
-|    Balancers**                                                                               |
+|    **Balancers**                                                                             |
 |                                                                                              |
 | 2. In the resulting screen click the **Add HTTP Load Balancer** in the graphic as shown.     |
 |                                                                                              |
-| *Note: You have defaulted to your specific namespace as that is the only namespace to*       |
-|                                                                                              |
-| *which you have administrative access.*                                                      |
+| .. note::                                                                                    |
+|    You have defaulted to your specific namespace as that is the only namespace to which you  |
+|    have administrative access.                                                               |
 +----------------------------------------------------------------------------------------------+
 | |lab001|                                                                                     |
 |                                                                                              |
