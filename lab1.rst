@@ -1,22 +1,22 @@
 Lab1: Deploying and Managing F5 Distributed Cloud Web Application Firewall Configuration
 ========================================================================================
 
-Lab1 will focus on the deployment and security of an existing hosted application using F5's 
-Distributed Cloud Platform and its services. This will be configured in a SaaS only configuration 
+Lab1 will focus on the deployment and security of an existing hosted application using the F5 
+Distributed Cloud Platform and Services. This lab will be deployed in a SaaS only configuration 
 with no on-premises (public or private cloud) elements.  All configurations will be made via 
-the F5 Distributed Cloud within the F5 Distributed Cloud Global Network services architecture.
+the F5 Distributed Cloud Console and within the F5 Distributed Cloud Global Network services architecture.
 
 For the tasks that follow, you should have already noted your individual **namespace** If you 
-failed to note either, return to the **Introduction** section of this lab, follow the instructions
-provided and note your accordingly. The **Delegated Domain** and the F5 Distributed Cloud **Tenant** 
-are noted below for your convenience as they will be the same for all lab attendees.
+failed to note it, return to the **Introduction** section of this lab, follow the instructions
+provided and note your **namespace** accordingly. The **Delegated Domain** and the F5 Distributed Cloud 
+**Tenant** are noted below for your convenience as they will be the same for all lab attendees.
 
 * **Delegated Domain:** **.lab-sec.f5demos.com** 
 * **F5 Distributed Cloud Tenant:** **https://f5-xc-lab-sec.console.ves.volterra.io** 
 
 Following the tasks in the prior **Introduction** Section, you should now already be able to access
-the F5 Distributed Cloud Console, having set you Persona and view levels. If you have done so 
-already, please login and to your tenant for this lab and proceed to Task 1.
+the F5 Distributed Cloud Console, having set your Persona and view levels. If you have not done so 
+already, please login to your tenant for this lab and proceed to Task 1.
 
 TASK 1: Configure Load Balancer, Origin Pool and Advertisement
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -45,17 +45,17 @@ steps will define an application, register its DNS and assign a target as an ori
 |                                                                                              |
 |    data. Values where **<namespace>** is required, use the name of your given namespace.     |
 |                                                                                              |
-|    - **Metadata:Name ID:**  **<namespace>-lb**                                               |
-|    - **Basic Configuration:List of Domains:** **<namespace>.lab-sec.f5demos.com**            |
-|    - **Basic Configuration:Select Type of Load Balancer:** **HTTP**                          |
-|    - **Basic Configuration:Automatically Manage DNS Records** Check the Box                  |
-|    - **Basic Configuration:HTTP Port:** **80**                                               |
+|    * **Metadata:Name ID:**  **<namespace>-lb**                                               |
+|    * **Basic Configuration: List of Domains:** **<namespace>.lab-sec.f5demos.com**           |
+|    * **Basic Configuration: Select Type of Load Balancer:** **HTTP**                         |
+|    * **Basic Configuration: Automatically Manage DNS Records:** (Check the checkox           |
+|    * **Basic Configuration: HTTP Port:** **80**                                              |
 +----------------------------------------------------------------------------------------------+
 | |lab003|                                                                                     |
 +----------------------------------------------------------------------------------------------+
 
 +----------------------------------------------------------------------------------------------+
-| 4. In the current window left-hand navigation, click **Default Origin Servers** and then     |
+| 4. In the current window's left-hand navigation, click **Default Origin Servers**. Next,     |
 |                                                                                              |
 |    click **Add Item** within the **Origin Pools** section of **Default Origin Servers**.     |
 +----------------------------------------------------------------------------------------------+
@@ -69,7 +69,7 @@ steps will define an application, register its DNS and assign a target as an ori
 +----------------------------------------------------------------------------------------------+
 
 +----------------------------------------------------------------------------------------------+
-| 6. In the resulting window, enter **<namespace-pool>** in the **Name** field and click       |
+| 6. In the resulting window, enter **<namespace>-pool** in the **Name** field and click       |
 |                                                                                              |
 |    **Add Item** under **Basic Configuration: Origin Servers**                                |
 +----------------------------------------------------------------------------------------------+
@@ -83,7 +83,7 @@ steps will define an application, register its DNS and assign a target as an ori
 |                                                                                              |
 | 8. For **DNS Name** enter the following hostname:                                            |
 |                                                                                              |
-|    **demo-app.cloud.myf5demo.com** and click **Add Item**                                    |
+|    **demo-app.cloud.myf5demo.com** and then click **Add Item**                               |
 +----------------------------------------------------------------------------------------------+
 | |lab007|                                                                                     |
 +----------------------------------------------------------------------------------------------+
@@ -91,7 +91,7 @@ steps will define an application, register its DNS and assign a target as an ori
 +----------------------------------------------------------------------------------------------+
 | 9. After returning to the prior window, make sure **Port:** under **Basic Configuration**    |
 |                                                                                              |
-|     is configured for **80**.                                                                |
+|    is configured for **80**.                                                                 |
 |                                                                                              |
 | 10. Leave all other values as shown while scrolling to the bottom and click, **Continue**.   |
 |                                                                                              |
@@ -191,11 +191,10 @@ These steps will demonstrate various aspects of the configuration.
 +----------------------------------------------------------------------------------------------+
 | 12. Click **DNS Information** in the left-hand navigation.                                   |
 |                                                                                              |
-| *Note: The pointer record for the CNAME is listed under "Host Name". It is also listed on*   |
-|                                                                                              |
-| *the "HTTP Load Balancers" screen for each Load Balancer. The associated "Tenant IP" is also*|
-|                                                                                              |
-| *shown. The "Tenant IP" is uniquely assigned to each F5 Distributed Cloud Tenant.*           |
+| .. note::                                                                                    |
+|    The pointer record for the CNAME is listed under "Host Name". It is also listed on the    |
+|    "HTTP Load Balancers" screen for each Load Balancer. The associated "Tenant IP" is also   |
+|    shown. The "Tenant IP" is uniquely assigned to each F5 Distributed Cloud Tenant.          |
 +----------------------------------------------------------------------------------------------+
 | |lab021|                                                                                     |
 +----------------------------------------------------------------------------------------------+
