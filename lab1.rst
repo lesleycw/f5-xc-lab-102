@@ -32,9 +32,9 @@ steps will define an application, register its DNS and assign a target as an ori
 | 2. In the resulting screen click the **Add HTTP Load Balancer** in the graphic as shown.     |
 |                                                                                              |
 | .. note::                                                                                    |
-|    You have defaulted to your specific namespace as that is the only namespace to which you  |
+|    *You have defaulted to your specific namespace as that is the only namespace to which you*|
 |                                                                                              |
-|    have administrative access.                                                               |
+|    *have administrative access.*                                                             |
 +----------------------------------------------------------------------------------------------+
 | |lab001|                                                                                     |
 |                                                                                              |
@@ -91,6 +91,7 @@ steps will define an application, register its DNS and assign a target as an ori
 
 +----------------------------------------------------------------------------------------------+
 | 9. After returning to the prior window, make sure **Port:** under **Basic Configuration**    |
+|                                                                                              |
 |    is configured for **80**.                                                                 |
 |                                                                                              |
 | 10. Leave all other values as shown while scrolling to the bottom and click, **Continue**.   |
@@ -110,19 +111,19 @@ steps will define an application, register its DNS and assign a target as an ori
 |     the **Where to Advertise the VIP** setting.                                              |
 |                                                                                              |
 | .. note::                                                                                    |
-|    The above selection controls how/where the advertised. The "Advertise On Internet" setting|
+|    *The above selection controls how/where the application is advertised. The "Advertise On* |
 |                                                                                              |
-|    means that this application will be advertised globally using the F5 Distributed Cloud    |
+|    *Internet" setting means that this application will be advertised globally using the F5*  |
 |                                                                                              |
-|    Global Network utilizing Anycast.                                                         |
+|    *Distributed Cloud Global Network utilizing Anycast.*                                      |
 +----------------------------------------------------------------------------------------------+
 | |lab011|                                                                                     |
 +----------------------------------------------------------------------------------------------+
 
-TASK 2: Configure WAF Policy on Load Balancer
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Task 2: Configure WAF Policy on the Load Balancer
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The following steps will guide you through adding a Web Application Firewall (WAF) Policy Policy.
+The following steps will guide you through adding a Web Application Firewall (WAF) Policy.
 These steps will demonstrate various aspects of the configuration.
 
 +----------------------------------------------------------------------------------------------+
@@ -138,15 +139,18 @@ These steps will demonstrate various aspects of the configuration.
 +----------------------------------------------------------------------------------------------+
 | 2. In the resulting **App Firewall** drop down select **Create new App Firewall**.           |
 |                                                                                              |
-| *Note: The "shared/base-appfw" policy is in the "shared namespace" which can be applied to*  |
+| .. note::                                                                                    |
+|    *The "shared/base-appfw" policy is in the "shared namespace" which can be applied to*     |
 |                                                                                              |
-| *multiple Load Balancer configurations across namespaces, reducing policy sprawl.*           |
+|    *multiple Load Balancer configurations across namespaces, reducing policy sprawl.*        |
 +----------------------------------------------------------------------------------------------+
 | |lab014|                                                                                     |
 +----------------------------------------------------------------------------------------------+
 
 +----------------------------------------------------------------------------------------------+
-| 3. In the resulting window **Metadata** section enter **<namespace>-appfw** for the **Name**.|
+| 3. In the resulting window's **Metadata** section enter **<namespace>-appfw** for the        |
+|                                                                                              |
+|    **Name**.                                                                                 |
 |                                                                                              |
 | 4. Under **Enforcement Mode**, change the mode to **Blocking**.                              |
 |                                                                                              |
@@ -182,7 +186,7 @@ These steps will demonstrate various aspects of the configuration.
 +----------------------------------------------------------------------------------------------+
 | 10. In the **HTTP Load Balancers** window, note the application hostname under the           |
 |                                                                                              |
-|     **Domains** column (Task1: Step 4).                                                      |
+|     **Domains** column *(This was done in Task1: Step 4)*.                                   |
 |                                                                                              |
 | 11. Click the **Action** dots, and then in the subsequent menu **Manage Configuration**.     |
 +----------------------------------------------------------------------------------------------+
@@ -193,9 +197,11 @@ These steps will demonstrate various aspects of the configuration.
 | 12. Click **DNS Information** in the left-hand navigation.                                   |
 |                                                                                              |
 | .. note::                                                                                    |
-|    The pointer record for the CNAME is listed under "Host Name". It is also listed on the    |
-|    "HTTP Load Balancers" screen for each Load Balancer. The associated "Tenant IP" is also   |
-|    shown. The "Tenant IP" is uniquely assigned to each F5 Distributed Cloud Tenant.          |
+|    *The pointer record for the CNAME is listed under "Host Name". It is also listed on the*  |
+|                                                                                              |
+|    *"HTTP Load Balancers" screen for each Load Balancer. The associated "Tenant IP" is also* |
+|                                                                                              |
+|    *shown. The "Tenant IP" is uniquely assigned to each F5 Distributed Cloud Tenant.*        |
 +----------------------------------------------------------------------------------------------+
 | |lab021|                                                                                     |
 +----------------------------------------------------------------------------------------------+
@@ -203,17 +209,20 @@ These steps will demonstrate various aspects of the configuration.
 +----------------------------------------------------------------------------------------------+
 | 13. Click **JSON** in the horizontal navigation at the top of the screen.                    |
 |                                                                                              |
-| *Note: The JSON payload (or YAML format, from dropdown) provides the entire Load Balancer*   |
 |                                                                                              |
-| *configuration for backup or subsequent CI/CD automation operations.*                        |
+| .. note::                                                                                    |
+|    *The JSON payload (or YAML format, from dropdown) provides the entire Load Balancer*      |
+|                                                                                              |
+|    *configuration for backup or subsequent CI/CD automation operations.*                     |
 |                                                                                              |
 | 14. Click **Documentation** in the horizontal navigation at the top of the screen.           |
 |                                                                                              |
-| *Note: The Documentation screen provides details on the F5 Distributed Cloud Console API.*   |
+| .. note::                                                                                    |
+|    *The Documentation screen provides details on the F5 Distributed Cloud Console API.*      |
 |                                                                                              |
-| *All operations in the F5 Distributed Cloud Platform are API-first. This includes all GUI*   |
+|    *All operations in the F5 Distributed Cloud Platform are API-first. This includes all GUI*|
 |                                                                                              |
-| *actions and associated audit logging.*                                                      |
+|    *actions and associated audit logging.*                                                   |
 |                                                                                              |
 | 15. Click **Cancel and Exit** to return to the **HTTP Load Balancers** screen.               |
 +----------------------------------------------------------------------------------------------+
@@ -222,7 +231,7 @@ These steps will demonstrate various aspects of the configuration.
 | |lab023|                                                                                     |
 +----------------------------------------------------------------------------------------------+
 
-TASK 3: Testing the WAF Policy & Reviewing Event Data  
+Task 3: Testing the WAF Policy & Reviewing Event Data  
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 You will now perform basic testing of the Web Application Firewall (WAF) Policy. You will also 
@@ -262,6 +271,7 @@ review the generated event data to make additional configuration changes.
 |    **Virtual Hosts** > **HTTP Load Balancers** and then click on **Performance Monitoring**  |
 |                                                                                              |
 |    link provided for your respective load balancer.                                          |
+|                                                                                              |
 |                                                                                              |
 | *Note: As you have not run, many request summary analytics may not be available yet.*        |
 +----------------------------------------------------------------------------------------------+
@@ -305,7 +315,8 @@ review the generated event data to make additional configuration changes.
 |                                                                                              |
 | 11. Expand your latest security event as shown.                                              |
 |                                                                                              |
-| *Note: If you lost your 1 Hour Filter, re-apply using Task 3: Step 6*                        |
+|  .. note::                                                                                   |
+|     *If you lost your 1 Hour Filter, re-apply using Task 3: Step 6*                          |
 +----------------------------------------------------------------------------------------------+
 | |lab032|                                                                                     |
 |                                                                                              |
@@ -321,7 +332,8 @@ review the generated event data to make additional configuration changes.
 |                                                                                              |
 |     actions taken during the security event.                                                 |
 |                                                                                              |
-| *Note: Similar to a Request, Security Events also have additional detail in JSON format.*    |
+| .. note::                                                                                    |
+|    *Similar to a Request, Security Events also have additional detail in JSON format.*       |
 |                                                                                              |
 | 14. Next, click on the **Add Filter** link just under the **Security Events** title near the |
 |                                                                                              |
@@ -363,7 +375,8 @@ review the generated event data to make additional configuration changes.
 +----------------------------------------------------------------------------------------------+
 | 18. Select **Create WAF Exclusion rule** from the dropdown that appears.                     |
 |                                                                                              |
-| *Note: Adding requestor to "Blocked or Trusted Clients" is also available.*                  |
+| .. note::                                                                                    |
+|    *Adding requestor to "Blocked or Trusted Clients" is also available.*                     |
 |                                                                                              |
 | 19. In the subsequent **Simple WAF Exclusion Rule** window, review the settings (which are   |
 |                                                                                              |
@@ -375,7 +388,7 @@ review the generated event data to make additional configuration changes.
 |                                                                                              |
 |     the exclusion should expire. (helpful when testing/validating). the format should be as  |
 |                                                                                              |
-|     shown YYYY-MM-DD HH:MM:SS (2022-05-30 01:21:00).                                         |
+|     shown *YYYY-MM-DD HH:MM:SS (2022-05-30 01:21:00)*.                                       |
 |                                                                                              |
 | 21. Click **Apply** when complete.                                                           |
 +----------------------------------------------------------------------------------------------+
@@ -397,7 +410,8 @@ review the generated event data to make additional configuration changes.
 |                                                                                              |
 |     **Save and Exit** button.                                                                |
 |                                                                                              |
-| *Note: Rerunning the attack you just excluded, you will note that it is no longer blocked*.  |
+| .. note::                                                                                    |
+|    *Rerunning the attack you just excluded, you will note that it is no longer blocked*.     |
 +----------------------------------------------------------------------------------------------+
 | |lab043|                                                                                     |
 |                                                                                              |
@@ -406,7 +420,7 @@ review the generated event data to make additional configuration changes.
 | |lab045|                                                                                     |
 +----------------------------------------------------------------------------------------------+
 
-TASK 4: Understanding Exclusions and Customizing WAF Policy  
+Task 4: Understanding Exclusions and Customizing WAF Policy  
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 In this task you will come to understand how exclusions are applied. You will also further  
@@ -425,7 +439,8 @@ customize the WAF policy just built.
 |                                                                                              |
 |    Load Balancer configuration and not the WAF Policy.                                       |
 |                                                                                              |
-| *Note: This allows for policy reuse and reduces the need for specific app WAF Policies*.     |
+| .. note::                                                                                    |
+|    *This allows for policy reuse and reduces the need for specific app WAF Policies*.        |
 |                                                                                              |
 | 3. Click on the **Cancel and Exit** to return to the prior window.                           |
 +----------------------------------------------------------------------------------------------+
@@ -480,31 +495,26 @@ customize the WAF policy just built.
 | |lab055|                                                                                     |
 +----------------------------------------------------------------------------------------------+
 
-  ''<style>body { font-family: Source Sans Pro, sans-serif; }</style>
-    <html style="margin: 0;"><head><title>Rejected Request</title></head>
-    <body style="margin : 0;">
-      <div style="background-color: #046b99; height: 40px; width: 100%;"></div>
-      <div style="min-height: 100px; background-color: white; text-align: center;"></div>
-      <div style="background-color: #fdb81e; height: 5px; width: 100%;"></div>
-      <div id="main-content" style="width: 100%; ">
-        <table width="100%">
-          <tr><td style="text-align: center;">
-	        <div style="margin-left: 50px;">
-              <div style="margin-bottom: 35px;"><br/>
-                <span style="font-size: 40pt; color: #046b99;">Rejected Request</span>
-              </div>
-              <div style="font-size: 14pt;">
-                <p>The requested URL was rejected. Please consult with your administrator.</p>
-                <p>Your Support ID is: <span style="color:red; font-weight:bold">{{request_id}}</span></p>
-		        <p><a href="javascript:history.back()">[Go Back]</a></p>
-              </div>
-            </div>
-          </td></tr>
-        </table>
-      </div>
-      <div style="background-color: #222222; position: fixed; bottom: 0px; height: 40px; width: 100%; text-align: center;"></div>
-    </body>
-    </html>''
+Sample Blocking Response Page to be copied::
+
+  <style>body { font-family: Source Sans Pro, sans-serif; }</style>
+  <html style="margin: 0;"><head><title>Rejected Request</title></head>
+  <body style="margin : 0;">
+  <div style="background-color: #046b99; height: 40px; width: 100%;"></div>
+  <div style="min-height: 100px; background-color: white; text-align: center;"></div>
+  <div style="background-color: #fdb81e; height: 5px; width: 100%;"></div>
+  <div id="main-content" style="width: 100%; ">
+  <table width="100%"><tr><td style="text-align: center;">
+  <div style="margin-left: 50px;">
+  <div style="margin-bottom: 35px;"><br/>
+  <span style="font-size: 40pt; color: #046b99;">Rejected Request</span>
+  </div><div style="font-size: 14pt;">
+  <p>The requested URL was rejected. Please consult with your administrator.</p>
+  <p>Your Support ID is: <span style="color:red; font-weight:bold">{{request_id}}</span></p>
+  <p><a href="javascript:history.back()">[Go Back]</a></p>
+  </div></div></td></tr></table></div>
+  <div style="background-color: #222222; position: fixed; bottom: 0px; height: 40px; width: 100%; text-align: center;"></div>
+  </body></html>
 
 +----------------------------------------------------------------------------------------------+
 | End of Lab:  This concludes Lab 1, feel free to review and test the configuration.           |
