@@ -133,5 +133,5 @@ After following the invitation email's to **Update Password**, proceed to the fi
    :width: 800px
 .. |intro010| image:: media/intro-010.png
    :width: 800px
-.. |labbgn| image:: media/bgn.png
+.. |labbgn| image:: media/labbgn.png
    :width: 800px
