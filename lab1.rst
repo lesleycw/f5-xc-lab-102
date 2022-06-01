@@ -1,24 +1,24 @@
-Lab1: Deploying and Managing F5 Distributed Cloud Web Application Firewall Configuration
-========================================================================================
+Lab 1: Deploying and Managing F5 Distributed Cloud Web Application Firewall Configuration
+====+====================================================================================
 
-Lab1 will focus on the deployment and security of an existing hosted application using the F5 
+Lab 1 will focus on the deployment and security of an existing hosted application using F5 
 Distributed Cloud Platform and Services. This lab will be deployed in a SaaS only configuration 
 with no on-premises (public or private cloud) elements.  All configurations will be made via 
 the F5 Distributed Cloud Console and within the F5 Distributed Cloud Global Network services architecture.
 
-For the tasks that follow, you should have already noted your individual **namespace** If you 
+For the tasks that follow, you should have already noted your individual **namespace**. If you 
 failed to note it, return to the **Introduction** section of this lab, follow the instructions
 provided and note your **namespace** accordingly. The **Delegated Domain** and the F5 Distributed Cloud 
-**Tenant** are noted below for your convenience as they will be the same for all lab attendees.
+**Tenant** are listed below for your convenience as they will be the same for all lab attendees.
 
-* **Delegated Domain:** **.lab-sec.f5demos.com** 
-* **F5 Distributed Cloud Tenant:** **https://f5-xc-lab-sec.console.ves.volterra.io** 
+* **Delegated Domain:** *.lab-sec.f5demos.com* 
+* **F5 Distributed Cloud Tenant:** *https://f5-xc-lab-sec.console.ves.volterra.io* 
 
-Following the tasks in the prior **Introduction** Section, you should now already be able to access
-the F5 Distributed Cloud Console, having set your Persona and view levels. If you have not done so 
+Following the tasks in the prior **Introduction** Section, you should now be able to access the
+F5 Distributed Cloud Console, having set your Persona and View levels. If you have not done so 
 already, please login to your tenant for this lab and proceed to Task 1.
 
-TASK 1: Configure Load Balancer, Origin Pool and Advertisement
+Task 1: Configure Load Balancer, Origin Pool and Advertisement
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The following steps will allow you to deploy and advertise a globally available application.  These
@@ -42,15 +42,15 @@ steps will define an application, register its DNS and assign a target as an ori
 +----------------------------------------------------------------------------------------------+
 
 +----------------------------------------------------------------------------------------------+
-| 3. Using the left-hand navigation and in the sections as presented, enter the following      |
+| 3. Using the left-hand navigation and in the sections as shown, enter the following          |
 |                                                                                              |
 |    data. Values where **<namespace>** is required, use the name of your given namespace.     |
 |                                                                                              |
-|    * **Metadata:Name ID:**  **<namespace>-lb**                                               |
-|    * **Basic Configuration: List of Domains:** **<namespace>.lab-sec.f5demos.com**           |
-|    * **Basic Configuration: Select Type of Load Balancer:** **HTTP**                         |
-|    * **Basic Configuration: Automatically Manage DNS Records:** (Check the checkox           |
-|    * **Basic Configuration: HTTP Port:** **80**                                              |
+|    * **Metadata:Name ID:**  *<namespace>-lb*                                                 |
+|    * **Basic Configuration: List of Domains:** *<namespace>.lab-sec.f5demos.com*             |
+|    * **Basic Configuration: Select Type of Load Balancer:** *HTTP*                           |
+|    * **Basic Configuration: Automatically Manage DNS Records:** *(Check the checkbox)*       |
+|    * **Basic Configuration: HTTP Port:** *80*                                                |
 +----------------------------------------------------------------------------------------------+
 | |lab003|                                                                                     |
 +----------------------------------------------------------------------------------------------+
@@ -91,7 +91,6 @@ steps will define an application, register its DNS and assign a target as an ori
 
 +----------------------------------------------------------------------------------------------+
 | 9. After returning to the prior window, make sure **Port:** under **Basic Configuration**    |
-|                                                                                              |
 |    is configured for **80**.                                                                 |
 |                                                                                              |
 | 10. Leave all other values as shown while scrolling to the bottom and click, **Continue**.   |
