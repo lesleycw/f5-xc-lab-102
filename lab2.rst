@@ -6,7 +6,7 @@ already available via the Web Application Firewall configuration. The security c
 will then be extended through F5 Distributed Bot Defense, an AI-driven, behavioral security 
 feature set to protect the previously configured application from advanced Bot threats. 
 
-TASK 1: Reviewing Signature-based Bot protection   
+Task 1: Reviewing Signature-based Bot protection   
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 In this task you will review the Bot signature configuration and view logged security events.
 This lab will begin back in the F5 Distributed Cloud Console.
@@ -58,7 +58,8 @@ This lab will begin back in the F5 Distributed Cloud Console.
 |                                                                                              |
 | 8. Observe the **User Agent** and response content.                                          |
 |                                                                                              |
-| *Note: curl is installed on Windows10+, and is available on most Linux or MAC platforms*.    |
+| .. note::                                                                                    |
+|    *curl is installed on Windows10+, and is available on most Linux or MAC platforms*.       |
 +----------------------------------------------------------------------------------------------+
 | |lab006|                                                                                     |
 +----------------------------------------------------------------------------------------------+
@@ -89,7 +90,7 @@ This lab will begin back in the F5 Distributed Cloud Console.
 | |lab009|                                                                                     |
 +----------------------------------------------------------------------------------------------+
 
-TASK 2: Enabling AI-Driven F5 Distributed Cloud BotDefense
+Task 2: Enabling AI-Driven F5 Distributed Cloud BotDefense
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The following steps will enable you to deploy F5 Distributed Cloud BotDefense and understand its
@@ -268,5 +269,5 @@ implementation.
    :width: 800px
 .. |lab026| image:: media/lab2-026.png
    :width: 800px
-.. |labend| image:: media/end.png
+.. |labend| image:: media/labend.png
    :width: 800px

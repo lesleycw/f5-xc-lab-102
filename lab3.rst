@@ -4,7 +4,7 @@ Lab 3: Exploring Service Policies
 The following lab tasks will guide you the configuration of various Service Policies 
 which can be used to implement a variety of security controls. 
 
-TASK 1: Creating Local Namespace Service Policies  
+Task 1: Creating Local Namespace Service Policies  
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 In this task you will add geo-filter and allowed-ip based service policies.
@@ -20,9 +20,10 @@ In this task you will add geo-filter and allowed-ip based service policies.
 |                                                                                              |
 | 3. Click **Add Service Policy** in the top left area as shown.                               |
 |                                                                                              |
-| *Note: Using shared namespace Service Policies provides the ability to use API-updated*      |
+| .. note::                                                                                    |
+|    *Using shared namespace Service Policies provides the ability to use API-updated*         |
 |                                                                                              |
-| *policy controls to implement common service security across multiple resources.*            |
+|    *policy controls to implement common service security across multiple resources.*         |
 +----------------------------------------------------------------------------------------------+
 | |lab001|                                                                                     |
 |                                                                                              |
@@ -88,9 +89,10 @@ In this task you will add geo-filter and allowed-ip based service policies.
 |                                                                                              |
 |    **IPv4 Prefix List** configuration section and click **Configure**.                       |
 |                                                                                              |
-| *Note: The section just below "List of IP Prefix Set" allows you to build a collection of*   |
+| .. note::                                                                                    |
+|    *The section just below "List of IP Prefix Set" allows you to build a collection of*      |
 |                                                                                              |
-| *of various IP lists which can be maintained through API controls.*                          |
+|    *of various IP lists which can be maintained through API controls.*                       |
 +----------------------------------------------------------------------------------------------+
 | |lab011|                                                                                     |
 +----------------------------------------------------------------------------------------------+
@@ -119,7 +121,7 @@ In this task you will add geo-filter and allowed-ip based service policies.
 | |lab015|                                                                                     |
 +----------------------------------------------------------------------------------------------+
 
-TASK 2: Attaching Service Policies and configuring IP Reputation
+Task 2: Attaching Service Policies and configuring IP Reputation
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The following steps will enable you to attach Service Policies to your configured Load Balancer.
@@ -242,11 +244,12 @@ It will also help you understand additional approaches for Service Policies.
 |                                                                                              |
 |     traffic as intended.  Click **Apply** when completed.                                    |
 |                                                                                              |
-| *Note: Because the "allowed-ip" begins with an allowed ip (yours) and ends in a "Deny" a*    |
+| .. note::                                                                                    |
+|   *Because the "allowed-ip" begins with an allowed ip (yours) and ends in a "Deny" a*        |
 |                                                                                              |
-| *positive security model will be applied (denying all other traffic).  Similar positive or * |
+|   *positive security model will be applied (denying all other traffic).  Similar positive or*|
 |                                                                                              |
-| *negative service policies can be created and applied (Headers, methods, file types, etc)*   |
+|   *negative service policies can be created and applied (Headers, methods, file types, etc)* |
 |                                                                                              |
 | 21. Scroll to the bottom of the HTTP Load Balancer configuration and click **Save and Exit**.|
 +----------------------------------------------------------------------------------------------+
@@ -267,7 +270,7 @@ It will also help you understand additional approaches for Service Policies.
 | |lab035|                                                                                     |
 +----------------------------------------------------------------------------------------------+
 
-TASK 3: Observing Route Configurations
+Task 3: Observing Route Configurations
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The following steps will enable you to attach Service Policies to your configured Load Balancer.
@@ -402,5 +405,5 @@ It will also help you understand additional approaches for Service Policies.
    :width: 800px
 .. |lab041| image:: media/lab3-041.png
    :width: 800px
-.. |labend| image:: media/end.png
+.. |labend| image:: media/labend.png
    :width: 800px
