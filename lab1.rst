@@ -1,5 +1,5 @@
 Lab 1: Deploying and Managing F5 Distributed Cloud Web Application Firewall Configuration
-====+====================================================================================
+=========================================================================================
 
 Lab 1 will focus on the deployment and security of an existing hosted application using F5 
 Distributed Cloud Platform and Services. This lab will be deployed in a SaaS only configuration 
@@ -272,8 +272,8 @@ review the generated event data to make additional configuration changes.
 |                                                                                              |
 |    link provided for your respective load balancer.                                          |
 |                                                                                              |
-|                                                                                              |
-| *Note: As you have not run, many request summary analytics may not be available yet.*        |
+| .. note::                                                                                    |
+|    *As you have not run, many request summary analytics may not be available yet.*           |
 +----------------------------------------------------------------------------------------------+
 | |lab027|                                                                                     |
 +----------------------------------------------------------------------------------------------+
@@ -315,8 +315,8 @@ review the generated event data to make additional configuration changes.
 |                                                                                              |
 | 11. Expand your latest security event as shown.                                              |
 |                                                                                              |
-|  .. note::                                                                                   |
-|     *If you lost your 1 Hour Filter, re-apply using Task 3: Step 6*                          |
+| .. note::                                                                                    |
+|    *If you lost your 1 Hour Filter, re-apply using Task 3: Step 6*                           |
 +----------------------------------------------------------------------------------------------+
 | |lab032|                                                                                     |
 |                                                                                              |
@@ -517,7 +517,7 @@ Sample Blocking Response Page to be copied::
   </body></html>
 
 +----------------------------------------------------------------------------------------------+
-| End of Lab:  This concludes Lab 1, feel free to review and test the configuration.           |
+| **End of Lab:**  This concludes Lab 1, feel free to review and test the configuration.       |
 +----------------------------------------------------------------------------------------------+
 | |labend|                                                                                     |
 +----------------------------------------------------------------------------------------------+
@@ -632,5 +632,5 @@ Sample Blocking Response Page to be copied::
    :width: 800px
 .. |lab055| image:: media/lab1-055.png
    :width: 800px
-.. |labend| image:: media/end.png
+.. |labend| image:: media/labend.png
    :width: 800px
