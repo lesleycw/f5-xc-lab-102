@@ -316,9 +316,10 @@ It will also help you understand additional approaches for Service Policies.
 | |lab041|                                                                                     |
 +----------------------------------------------------------------------------------------------+
 
-
 +----------------------------------------------------------------------------------------------+
-| **End of Lab 3:**  This concludes the lab, feel free to review and test the configuration.   |
+| **End of Lab 3:**  This concludes Lab 3, feel free to review and test the configuration.     |
+|                                                                                              |
+| A Q&A session will begin shorlty to conclude the overall lab.                                |
 +----------------------------------------------------------------------------------------------+
 | |labend|                                                                                     |
 +----------------------------------------------------------------------------------------------+

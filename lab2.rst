@@ -214,7 +214,9 @@ implementation.
 +----------------------------------------------------------------------------------------------+
 
 +----------------------------------------------------------------------------------------------+
-| **End of Lab 2**:  This concludes the lab, feel free to review and test the configuration.   |
+| **End of Lab 2:**  This concludes Lab 2, feel free to review and test the configuration.     |
+|                                                                                              |
+| A bried presentation will be shared prior to the beginning of Lab 3.                         |
 +----------------------------------------------------------------------------------------------+
 | |labend|                                                                                     |
 +----------------------------------------------------------------------------------------------+
