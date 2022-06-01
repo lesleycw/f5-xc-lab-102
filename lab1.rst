@@ -109,11 +109,10 @@ steps will define an application, register its DNS and assign a target as an ori
 |                                                                                              |
 |     the **Where to Advertise the VIP** setting.                                              |
 |                                                                                              |
-| *Note: This selection control how/where the advertised.  The "Advertise on Internet setting*"|
-|                                                                                              |
-| *means that this application will be advertised globally using the F5 Distributed Cloud*     |
-|                                                                                              |
-| *Global Network and Anycast*.                                                                |
+| .. note::                                                                                    |
+|    The above selection controls how/where the advertised. The "Advertise on Internet setting"|
+|    eans that this application will be advertised globally using the F5 Distributed Cloud     |
+|    Global Network utilizing Anycast.                                                         |
 +----------------------------------------------------------------------------------------------+
 | |lab011|                                                                                     |
 +----------------------------------------------------------------------------------------------+
