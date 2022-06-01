@@ -33,6 +33,7 @@ steps will define an application, register its DNS and assign a target as an ori
 |                                                                                              |
 | .. note::                                                                                    |
 |    You have defaulted to your specific namespace as that is the only namespace to which you  |
+|                                                                                              |
 |    have administrative access.                                                               |
 +----------------------------------------------------------------------------------------------+
 | |lab001|                                                                                     |
