@@ -28,23 +28,23 @@ This lab will begin back in the F5 Distributed Cloud Console.
 +----------------------------------------------------------------------------------------------+
 
 +----------------------------------------------------------------------------------------------+
-| 3. Using the left-hand navigation, click **Detection Settings** and the in the **Detection** |
+| 4. Using the left-hand navigation, click **Detection Settings** and the in the **Detection** |
 |                                                                                              |
 |    **Settings** section, click the **Signature-Based Bot Protection** dropdown menu.         |
 |                                                                                              |
-| 4. From the **Signature-Based Bot Protection** dropdown menu, select **Custom**.             |
+| 5. From the **Signature-Based Bot Protection** dropdown menu, select **Custom**.             |
 +----------------------------------------------------------------------------------------------+
 | |lab003|                                                                                     |
 +----------------------------------------------------------------------------------------------+
 
 +----------------------------------------------------------------------------------------------+
-| 5. In the expanded configuration window, observe the three Bot signature categories;         |
+| 6. In the expanded configuration window, observe the three Bot signature categories;         |
 |                                                                                              |
-|    **Malicious**, Suspicious**, and **Good**. Also observe the actions **Block**, **Ignore**,|
+|    **Malicious, Suspicious,** and **Good**. Also observe the actions **Block, Ignore**, and  |
 |                                                                                              |
-|    and **Report** which can be reviewed by selecting one of the dropdowns.                   |
+|    **Report** which can be reviewed by selecting one of the dropdowns.                       |
 |                                                                                              |
-| 6. Click **Cancel and Exit** to leave this window.                                           |
+| 7. Click **Cancel and Exit** to leave this window.                                           |
 +----------------------------------------------------------------------------------------------+
 | |lab004|                                                                                     |
 |                                                                                              |
@@ -52,11 +52,11 @@ This lab will begin back in the F5 Distributed Cloud Console.
 +----------------------------------------------------------------------------------------------+
 
 +----------------------------------------------------------------------------------------------+
-| 7. Open a terminal window or DOS prompt on your respective client and issue the following    |
+| 8. Open a terminal window or DOS prompt on your respective client and issue the following    |
 |                                                                                              |
 |    **curl** command: *curl -v http://<namespace>/lab-sec.f5demos.com*.                       |
 |                                                                                              |
-| 8. Observe the **User Agent** and response content.                                          |
+| 9. Observe the **User Agent** and response content.                                          |
 |                                                                                              |
 | .. note::                                                                                    |
 |    *curl is installed on Windows10+, and is available on most Linux or MAC platforms*.       |
@@ -65,27 +65,27 @@ This lab will begin back in the F5 Distributed Cloud Console.
 +----------------------------------------------------------------------------------------------+
 
 +----------------------------------------------------------------------------------------------+
-| 9. Return to the F5 Distributed Cloud Console, in the left-hand navigation menu, expand the  |
+| 10. Return to the F5 Distributed Cloud Console, in the left-hand navigation menu, expand the |
 |                                                                                              |
 |    **Virtual Hosts** section and click the **HTTP Load Balancers** link.                     |
 |                                                                                              |
-| 10. On your named Load Balancer, select the **Security Monitoring**, link as shown.          |
+| 11. On your named Load Balancer, select the **Security Monitoring**, link as shown.          |
 +----------------------------------------------------------------------------------------------+
 | |lab007|                                                                                     |
 +----------------------------------------------------------------------------------------------+
 
 +----------------------------------------------------------------------------------------------+
-| 11. From the **Security Monitoring** Dashboard, select **Security Events**.                  |
+| 12. From the **Security Monitoring** Dashboard, select **Security Events**.                  |
 +----------------------------------------------------------------------------------------------+
 | |lab008|                                                                                     |
 +----------------------------------------------------------------------------------------------+
 
 +----------------------------------------------------------------------------------------------+
-| 12. Locate your most recent security event, which should be your curl request. Expand the    |
+| 13. Locate your most recent security event, which should be your curl request. Expand the    |
 |                                                                                              |
-|     security event as you have done in prior exercises to observe the "suspicious" Bot       |
+|     security event as you have done in prior exercises to observe the "Suspicious" Bot       |
 |                                                                                              |
-|     reporting. Remember the settings on "Suspicious" Bots was to report from Step 5 above.   |
+|     reporting. Remember the setting for Suspicious Bot was set to *Report* from Step 5 above.|
 +----------------------------------------------------------------------------------------------+
 | |lab009|                                                                                     |
 +----------------------------------------------------------------------------------------------+
@@ -170,14 +170,14 @@ implementation.
 +----------------------------------------------------------------------------------------------+
 | 15. In the **Application Endpoint** scroll through the section use the following values:     |
 |                                                                                              |
-|     - **Metadata\Name:** **auth-bot**                                                        |
-|     - **HTTP Methods** **POST**                                                              |
-|     - **Protocol** **BOTH**                                                                  |
-|     - **Path\Path Match** **Prefix**                                                         |
-|     - **Prefix** **/auth.php**                                                               |
-|     - **Bot Traffic Mitigation\Select Bot Mitigation Action** **Block**                      |
+|     * **Metadata\Name:** *auth-bot*                                                          |
+|     * **HTTP Methods:** *POST*                                                               |
+|     * **Protocol:** *BOTH*                                                                   |
+|     * **Path\Path Match:** *Prefix*                                                          |
+|     * **Prefix:** */auth.php*                                                                |
+|     * **Bot Traffic Mitigation\Select Bot Mitigation Action:** *Block*                       |
 |                                                                                              |
-| 15. Scroll to the bottom and click **Add Item**                                              |
+| 16. Scroll to the bottom and click **Add Item**                                              |
 +----------------------------------------------------------------------------------------------+
 | |lab021|                                                                                     |
 |                                                                                              |
@@ -185,34 +185,36 @@ implementation.
 +----------------------------------------------------------------------------------------------+
 
 +----------------------------------------------------------------------------------------------+
-| 16. Then click **Apply** on the **App Endpoint Type** screen                                 |
+| 17. Then click **Apply** on the **App Endpoint Type** screen                                 |
 |                                                                                              |
-| 17. Then click **Apply** on the **Protected App Endpoints** screen                           |
+| 18. Then click **Apply** on the **Protected App Endpoints** screen                           |
 |                                                                                              |
-| 18. Then scroll to the bottom on the **HTTP Load Balancer** screen, and click **Save and**   |
-|     Exit**.                                                                                  |
+| 19. Then scroll to the bottom on the **HTTP Load Balancer** screen, and click **Save and**   |
+|     **Exit**.                                                                                |
 +----------------------------------------------------------------------------------------------+
 | |lab023|                                                                                     |
 |                                                                                              |
 | |lab024|                                                                                     |
 |                                                                                              |
 | |lab025|                                                                                     |
-+----------------------------------------------------------------------------------------------+
-
-+----------------------------------------------------------------------------------------------+
-| 19. Repeat Task 2 Steps 1-6.  Note you many need to close your browser or logout of the      |
 |                                                                                              |
-|     application.                                                                             |
-|                                                                                              |
-| 20. Observe now that there is additional telemetry being passed in the POST request.  This   |
-|                                                                                              |
-|     telemetry will be used to determine if the connecting client is an Automated Bot.        |
-+----------------------------------------------------------------------------------------------+
 | |lab026|                                                                                     |
 +----------------------------------------------------------------------------------------------+
 
 +----------------------------------------------------------------------------------------------+
-| End of Lab 2:  This concludes the lab, feel free to review and test the configuration.       |
+| 20. Repeat Task 2 Steps 1-6.  Note you many need to close your browser or logout of the      |
+|                                                                                              |
+|     application.                                                                             |
+|                                                                                              |
+| 21. Observe now that there is additional telemetry being passed in the POST request.  This   |
+|                                                                                              |
+|     telemetry will be used to determine if the connecting client is an Automated Bot.        |
++----------------------------------------------------------------------------------------------+
+| |lab027|                                                                                     |
++----------------------------------------------------------------------------------------------+
+
++----------------------------------------------------------------------------------------------+
+|**End of Lab 2**:  This concludes the lab, feel free to review and test the configuration.    |
 +----------------------------------------------------------------------------------------------+
 | |labend|                                                                                     |
 +----------------------------------------------------------------------------------------------+
