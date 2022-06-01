@@ -12,7 +12,7 @@ services that provides a UI and API for managing network, security, and compute 
 Distributed Cloud Console can manage "sites" in existing on-premises data centers and sites in
 AWS, Azure, and GCP cloud environments.
 
-TASK 1: Lab Environment
+Task 1: Lab Environment
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 +----------------------------------------------------------------------------------------------+
@@ -29,7 +29,7 @@ TASK 1: Lab Environment
 | |intro001|                                                                                   |
 +----------------------------------------------------------------------------------------------+
 
-TASK 2: F5 Distributed Cloud Console Login
+Task 2: F5 Distributed Cloud Console Login
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The following will guide you through the initial Lab environment access within the 
@@ -89,6 +89,8 @@ After following the invitation email's to **Update Password**, proceed to the fi
 | |intro006|                                                                                   |
 |                                                                                              |
 | |intro007|                                                                                   |
+|                                                                                              |
+| |intro008|                                                                                   |
 +----------------------------------------------------------------------------------------------+
 
 +----------------------------------------------------------------------------------------------+
@@ -100,13 +102,13 @@ After following the invitation email's to **Update Password**, proceed to the fi
 |                                                                                              |
 |    the Introduction summary for your convenience.                                            |
 +----------------------------------------------------------------------------------------------+
-| |intro008|                                                                                   |
-|                                                                                              |
 | |intro009|                                                                                   |
+|                                                                                              |
+| |intro010|                                                                                   |
 +----------------------------------------------------------------------------------------------+
 
 +----------------------------------------------------------------------------------------------+
-| Beginning of Lab:  You are now ready to begin the lab, Enjoy! Ask questions as needed.       |
+| **Beginning of Lab:**  You are now ready to begin the lab, Enjoy! Ask questions as needed.   |
 +----------------------------------------------------------------------------------------------+
 | |labbgn|                                                                                     |
 +----------------------------------------------------------------------------------------------+
@@ -128,6 +130,8 @@ After following the invitation email's to **Update Password**, proceed to the fi
 .. |intro008| image:: media/intro-008.png
    :width: 800px
 .. |intro009| image:: media/intro-009.png
+   :width: 800px
+.. |intro010| image:: media/intro-010.png
    :width: 800px
 .. |labbgn| image:: media/bgn.png
    :width: 800px

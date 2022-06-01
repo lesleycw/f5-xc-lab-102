@@ -318,7 +318,7 @@ It will also help you understand additional approaches for Service Policies.
 
 
 +----------------------------------------------------------------------------------------------+
-| End of Lab 3:  This concludes the lab, feel free to review and test the configuration.       |
+| **End of Lab 3:**  This concludes the lab, feel free to review and test the configuration.   |
 +----------------------------------------------------------------------------------------------+
 | |labend|                                                                                     |
 +----------------------------------------------------------------------------------------------+
