@@ -85,26 +85,17 @@ After following the invitation email's to **Update Password**, proceed to the fi
 |    **<adjective-animal>** namespace that you have been assigned. Each lab attendee will have |
 |                                                                                              |
 |    a unique namespace.                                                                       |
+|                                                                                              |
+| .. note::                                                                                    |
+|    *You may have to refresh the screen (spinning object).  This is due to perimission*       |
+|                                                                                              |
+|    *restrictions for this particular lab.*                                                   |
 +----------------------------------------------------------------------------------------------+
 | |intro006|                                                                                   |
 |                                                                                              |
 | |intro007|                                                                                   |
 |                                                                                              |
 | |intro008|                                                                                   |
-+----------------------------------------------------------------------------------------------+
-
-+----------------------------------------------------------------------------------------------+
-| 8. Using the **Select Service** menu top left select **DNS Management**.                     |
-|                                                                                              |
-|    clicking on the **Account** icon in the top right of the screen and then clicking on      |
-|                                                                                              |
-| 9. Note the **Delegated Domain** for this lab environment. It has been also listed above in  |
-|                                                                                              |
-|    the Introduction summary for your convenience.                                            |
-+----------------------------------------------------------------------------------------------+
-| |intro009|                                                                                   |
-|                                                                                              |
-| |intro010|                                                                                   |
 +----------------------------------------------------------------------------------------------+
 
 +----------------------------------------------------------------------------------------------+
@@ -128,10 +119,6 @@ After following the invitation email's to **Update Password**, proceed to the fi
 .. |intro007| image:: media/intro-007.png
    :width: 800px
 .. |intro008| image:: media/intro-008.png
-   :width: 800px
-.. |intro009| image:: media/intro-009.png
-   :width: 800px
-.. |intro010| image:: media/intro-010.png
    :width: 800px
 .. |labbgn| image:: media/labbgn.png
    :width: 800px
