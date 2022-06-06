@@ -25,24 +25,30 @@ The following steps will allow you to deploy and advertise a globally available 
 steps will define an application, register its DNS and assign a target as an origin.
 
 +----------------------------------------------------------------------------------------------+
-| 1. In the left-hand navigation expand **Manage** and click **Load Balancers > HTTP Load**    |
+| 1. In the left-hand navigation use the **Select Service** and click the **Load Balancers**   |
+|                                                                                              |
+|    icon/tile.                                                                                |
+|                                                                                              |
+| 2. In the left-hand navigation expand **Manage** and click **Load Balancers > HTTP Load**    |
 |                                                                                              |
 |    **Balancers**                                                                             |
 |                                                                                              |
-| 2. In the resulting screen click the **Add HTTP Load Balancer** in the graphic as shown.     |
+| 3. In the resulting screen click the **Add HTTP Load Balancer** in the graphic as shown.     |
 |                                                                                              |
 | .. note::                                                                                    |
 |    *You have defaulted to your specific namespace as that is the only namespace to which you*|
 |                                                                                              |
 |    *have administrative access.*                                                             |
 +----------------------------------------------------------------------------------------------+
+| |lab000|                                                                                     |
+|                                                                                              |
 | |lab001|                                                                                     |
 |                                                                                              |
 | |lab002|                                                                                     |
 +----------------------------------------------------------------------------------------------+
 
 +----------------------------------------------------------------------------------------------+
-| 3. Using the left-hand navigation and in the sections as shown, enter the following          |
+| 4. Using the left-hand navigation and in the sections as shown, enter the following          |
 |                                                                                              |
 |    data. Values where **<namespace>** is required, use the name of your given namespace.     |
 |                                                                                              |
@@ -56,7 +62,7 @@ steps will define an application, register its DNS and assign a target as an ori
 +----------------------------------------------------------------------------------------------+
 
 +----------------------------------------------------------------------------------------------+
-| 4. In the current window's left-hand navigation, click **Default Origin Servers**. Next,     |
+| 5. In the current window's left-hand navigation, click **Default Origin Servers**. Next,     |
 |                                                                                              |
 |    click **Add Item** within the **Origin Pools** section of **Default Origin Servers**.     |
 +----------------------------------------------------------------------------------------------+
@@ -64,13 +70,13 @@ steps will define an application, register its DNS and assign a target as an ori
 +----------------------------------------------------------------------------------------------+
 
 +----------------------------------------------------------------------------------------------+
-| 5. In the resulting window, use the drop down as shown and click **Create new Origin Pool**. |
+| 6. In the resulting window, use the drop down as shown and click **Create new Origin Pool**. |
 +----------------------------------------------------------------------------------------------+
 | |lab005|                                                                                     |
 +----------------------------------------------------------------------------------------------+
 
 +----------------------------------------------------------------------------------------------+
-| 6. In the resulting window, enter **<namespace>-pool** in the **Name** field and click       |
+| 7. In the resulting window, enter **<namespace>-pool** in the **Name** field and click       |
 |                                                                                              |
 |    **Add Item** under **Basic Configuration: Origin Servers**                                |
 +----------------------------------------------------------------------------------------------+
@@ -78,11 +84,11 @@ steps will define an application, register its DNS and assign a target as an ori
 +----------------------------------------------------------------------------------------------+
 
 +----------------------------------------------------------------------------------------------+
-| 7. In the resulting window, **Public DNS Name of Origin Server** should be selected for      |
+| 8. In the resulting window, **Public DNS Name of Origin Server** should be selected for      |
 |                                                                                              |
 |    **Select Type of Origin Server**.                                                         |
 |                                                                                              |
-| 8. For **DNS Name** enter the following hostname:                                            |
+| 9. For **DNS Name** enter the following hostname:                                            |
 |                                                                                              |
 |    **demo-app.amer.myedgedemo.com** and then click **Add Item**                              |
 +----------------------------------------------------------------------------------------------+
@@ -90,13 +96,13 @@ steps will define an application, register its DNS and assign a target as an ori
 +----------------------------------------------------------------------------------------------+
 
 +----------------------------------------------------------------------------------------------+
-| 9. After returning to the prior window, make sure **Port:** under **Basic Configuration**    |
+| 10. After returning to the prior window, make sure **Port:** under **Basic Configuration**   |
 |                                                                                              |
 |    is configured for **80**.                                                                 |
 |                                                                                              |
-| 10. Leave all other values as shown while scrolling to the bottom and click, **Continue**.   |
+| 11. Leave all other values as shown while scrolling to the bottom and click, **Continue**.   |
 |                                                                                              |
-| 11. After returning to the next window and confirming the content, click **Add Item**.       |
+| 12. After returning to the next window and confirming the content, click **Add Item**.       |
 +----------------------------------------------------------------------------------------------+
 | |lab008|                                                                                     |
 |                                                                                              |
@@ -106,7 +112,7 @@ steps will define an application, register its DNS and assign a target as an ori
 +----------------------------------------------------------------------------------------------+
 
 +----------------------------------------------------------------------------------------------+
-| 12. In the left-hand navigation of the main window, click **VIP Configuration** and note the |
+| 13. In the left-hand navigation of the main window, click **VIP Configuration** and note the |
 |                                                                                              |
 |     the **Where to Advertise the VIP** setting.                                              |
 |                                                                                              |
@@ -115,7 +121,7 @@ steps will define an application, register its DNS and assign a target as an ori
 |                                                                                              |
 |    *Internet" setting means that this application will be advertised globally using the F5*  |
 |                                                                                              |
-|    *Distributed Cloud Global Network utilizing Anycast.*                                      |
+|    *Distributed Cloud Global Network utilizing Anycast.*                                     |
 +----------------------------------------------------------------------------------------------+
 | |lab011|                                                                                     |
 +----------------------------------------------------------------------------------------------+
@@ -524,6 +530,8 @@ Sample Blocking Response Page to be copied::
 | |labend|                                                                                     |
 +----------------------------------------------------------------------------------------------+
 
+.. |lab000| image:: media/lab1-000.png
+   :width: 800px
 .. |lab001| image:: media/lab1-001.png
    :width: 800px
 .. |lab002| image:: media/lab1-002.png
