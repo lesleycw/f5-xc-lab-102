@@ -116,9 +116,9 @@ implementation.
 +----------------------------------------------------------------------------------------------+
 
 +----------------------------------------------------------------------------------------------+
-| 5. In the Developer window, find the **POST** to **auth.php**. *You can also use the filter  |
+| 5. In the Developer window, find the **POST** to **auth.php**. *You can also use the filter* |
 |                                                                                              |
-|    to find auth.php*. Select the respective line as shown.                                   |
+|    *to find auth.php*. Select the respective line as shown.                                  |
 |                                                                                              |
 | 6. Select the **Request** tab in the payload window that appears and observe that you only   |
 |                                                                                              |
@@ -272,6 +272,8 @@ implementation.
 .. |lab025| image:: _static/lab2-025.png
    :width: 800px
 .. |lab026| image:: _static/lab2-026.png
+   :width: 800px
+.. |lab027| image:: _static/lab2-027.png
    :width: 800px
 .. |labend| image:: _static/labend.png
    :width: 800px

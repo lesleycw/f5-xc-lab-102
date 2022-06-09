@@ -41,7 +41,7 @@ The name of the F5 Distributed Cloud tenant that we will be using for this lab i
 Additionally, the following are key configuration elements for this lab and will be used
 throughout the lab tasks that follow.
 
-* F5 Distributed Cloud Console: <https://f5-xc-lab-sec.console.ves.volterra.io/>
+* F5 Distributed Cloud Console: https://f5-xc-lab-sec.console.ves.volterra.io/
 * Delegated Domain: **lab-sec.f5demos.com**
 
 After following the invitation email's instructions to **Update Password**, proceed to the first
@@ -50,7 +50,7 @@ step below to access the F5 Distributed Cloud Lab Tenant.
 +----------------------------------------------------------------------------------------------+
 | 1. Please log into the F5 Distributed Cloud Lab Tenant with your user ID (email) & password. |
 |                                                                                              |
-|    <https://f5-xc-lab-sec.console.ves.volterra.io/>                                          |
+|    https://f5-xc-lab-sec.console.ves.volterra.io/                                            |
 |                                                                                              |
 | 2. When you first login, accept the Lab tenant EULA. Click the check box and then click      |
 |                                                                                              |

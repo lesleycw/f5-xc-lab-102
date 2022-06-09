@@ -12,7 +12,7 @@ provided and note your **namespace** accordingly. The **Delegated Domain** and t
 **Tenant** are listed below for your convenience as they will be the same for all lab attendees.
 
 * **Delegated Domain:** *.lab-sec.f5demos.com* 
-* **F5 Distributed Cloud Tenant:** <https://f5-xc-lab-sec.console.ves.volterra.io> 
+* **F5 Distributed Cloud Tenant:** https://f5-xc-lab-sec.console.ves.volterra.io 
 
 Following the tasks in the prior **Introduction** Section, you should now be able to access the
 F5 Distributed Cloud Console, having set your Work Domain Roles and Skill levels. If you have not
@@ -233,27 +233,6 @@ These steps will demonstrate various aspects of the configuration.
 | |lab023|                                                                                     |
 +----------------------------------------------------------------------------------------------+
 
-
-+----------------------------------------------------------------------------------------------+
-| 13. In the left-hand navigation of the main window, click **VIP Configuration** and note the |
-|                                                                                              |
-|     the **Where to Advertise the VIP** setting.                                              |
-|                                                                                              |
-| .. note::                                                                                    |
-|    *The above selection controls how/where the application is advertised. The "Advertise On* |
-|                                                                                              |
-|    *Internet" setting means that this application will be advertised globally using the F5*  |
-|                                                                                              |
-|    *Distributed Cloud Global Network utilizing Anycast.*                                     |
-+----------------------------------------------------------------------------------------------+
-| |lab011|                                                                                     |
-+----------------------------------------------------------------------------------------------+
-
-
-
-
-
-
 Task 3: Testing the WAF Policy & Reviewing Event Data  
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -313,7 +292,7 @@ review the generated event data to make additional configuration changes.
 | .. note::                                                                                    |
 |    *Security Event data may take 15-20 seconds to populate in the Console. Please force a*   |
 |                                                                                              |
-|    *refresh using the **Refresh** icon next to the Time Period selection in step 6.*         |
+|    *refresh using the Refresh icon next to the Time Period selection in step 6.*             |
 +----------------------------------------------------------------------------------------------+
 | |lab028|                                                                                     |
 +----------------------------------------------------------------------------------------------+
@@ -375,7 +354,7 @@ review the generated event data to make additional configuration changes.
 +----------------------------------------------------------------------------------------------+
 
 +----------------------------------------------------------------------------------------------+
-| 15. Type **req** in the open dialogue window and select **req_id* from the dropdown.         |
+| 15. Type **req** in the open dialogue window and select **req_id** from the dropdown.        |
 |                                                                                              |
 | 16. Next, select **In** from the **Select Operator** dropdown.                               |
 |                                                                                              |
@@ -470,7 +449,7 @@ customize the WAF policy just built.
 |    Load Balancer configuration and not the WAF Policy.                                       |
 |                                                                                              |
 | .. note::                                                                                    |
-|    *This allows for policy reuse and reduces the need for specific app WAF Policies*.        |
+|    *This allows for policy reuse and reduces the need for specific application WAF Policies*.|
 |                                                                                              |
 | 3. Click on the **Cancel and Exit** to return to the prior window.                           |
 +----------------------------------------------------------------------------------------------+

@@ -265,7 +265,7 @@ It will also help you understand additional approaches for Service Policies.
 |                                                                                              |
 |     **http://<namespace>.lab-sec.f5demos.com**. You should now be able to successfully       |
 |                                                                                              |
-|     navigate the application.                                                                |
+|     access the application.                                                                  |
 +----------------------------------------------------------------------------------------------+
 | |lab035|                                                                                     |
 +----------------------------------------------------------------------------------------------+
