@@ -12,26 +12,26 @@ provided and note your **namespace** accordingly. The **Delegated Domain** and t
 **Tenant** are listed below for your convenience as they will be the same for all lab attendees.
 
 * **Delegated Domain:** *.lab-sec.f5demos.com* 
-* **F5 Distributed Cloud Tenant:** *https://f5-xc-lab-sec.console.ves.volterra.io* 
+* **F5 Distributed Cloud Tenant:** <https://f5-xc-lab-sec.console.ves.volterra.io> 
 
 Following the tasks in the prior **Introduction** Section, you should now be able to access the
-F5 Distributed Cloud Console, having set your Persona and View levels. If you have not done so 
-already, please login to your tenant for this lab and proceed to Task 1.
+F5 Distributed Cloud Console, having set your Work Domain Roles and Skill levels. If you have not
+done so already, please login to your tenant for this lab and proceed to Task 1.
 
-Task 1: Configure Load Balancer, Origin Pool and Advertisement
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Task 1: Configure Load Balancer and Origin Pool
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The following steps will allow you to deploy and advertise a globally available application.  These
 steps will define an application, register its DNS and assign a target as an origin.
 
 +----------------------------------------------------------------------------------------------+
-| 1. Following the introduction instructions, you should now be in the **Load Balancers**      |
+| 1. Following the **Introduction** section  instructions, you should now be in the **Load**   |
 |                                                                                              |
-|    configuration window. If for some reason you are not in the **Load Balancers** window, use|
+|    **Balancers** configuration window. If for some reason you are not in the **Load**        |
 |                                                                                              |
-|    the **Select Service** in the left-hand navigation, and click **Load Balancers** as shown |
+|    **Balancers** window, use the **Select Service** in the left-hand navigation, and click   |
 |                                                                                              |
-|    in the Introduction, Task 2, Step 9.                                                      |
+|    **Load Balancers** as shown in the *Introduction section, Task 2, Step 9*.                |
 |                                                                                              |
 | 2. In the left-hand navigation expand **Manage** and click **Load Balancers > HTTP Load**    |
 |                                                                                              |
@@ -113,21 +113,6 @@ steps will define an application, register its DNS and assign a target as an ori
 | |lab010|                                                                                     |
 +----------------------------------------------------------------------------------------------+
 
-+----------------------------------------------------------------------------------------------+
-| 13. In the left-hand navigation of the main window, click **VIP Configuration** and note the |
-|                                                                                              |
-|     the **Where to Advertise the VIP** setting.                                              |
-|                                                                                              |
-| .. note::                                                                                    |
-|    *The above selection controls how/where the application is advertised. The "Advertise On* |
-|                                                                                              |
-|    *Internet" setting means that this application will be advertised globally using the F5*  |
-|                                                                                              |
-|    *Distributed Cloud Global Network utilizing Anycast.*                                     |
-+----------------------------------------------------------------------------------------------+
-| |lab011|                                                                                     |
-+----------------------------------------------------------------------------------------------+
-
 Task 2: Configure WAF Policy on the Load Balancer
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -184,9 +169,18 @@ These steps will demonstrate various aspects of the configuration.
 +----------------------------------------------------------------------------------------------+
 
 +----------------------------------------------------------------------------------------------+
-| 9. In the resulting **HTTP Load Balancer** window, scroll to the bottom of the configuration |
+| 9. In the resulting **HTTP Load Balancer** window, scroll to the **Advanced Configuration**  |
 |                                                                                              |
-|    and click **Save and Exit**.                                                              |
+|    section and note the **Where to Advertise the VIP** setting.                              |
+|                                                                                              |
+| .. note::                                                                                    |
+|    *The above selection controls how/where the application is advertised. The "Advertise On* |
+|                                                                                              |
+|    *Internet" setting means that this application will be advertised globally using the F5*  |
+|                                                                                              |
+|    *Distributed Cloud Global Network utilizing Anycast.*                                     |
+|                                                                                              |
+| 10. Click **Save and Exit** at the bottom of the **HTTP Load Balancer** configuration screen.|
 +----------------------------------------------------------------------------------------------+
 | |lab019|                                                                                     |
 +----------------------------------------------------------------------------------------------+
@@ -238,6 +232,27 @@ These steps will demonstrate various aspects of the configuration.
 |                                                                                              |
 | |lab023|                                                                                     |
 +----------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------+
+| 13. In the left-hand navigation of the main window, click **VIP Configuration** and note the |
+|                                                                                              |
+|     the **Where to Advertise the VIP** setting.                                              |
+|                                                                                              |
+| .. note::                                                                                    |
+|    *The above selection controls how/where the application is advertised. The "Advertise On* |
+|                                                                                              |
+|    *Internet" setting means that this application will be advertised globally using the F5*  |
+|                                                                                              |
+|    *Distributed Cloud Global Network utilizing Anycast.*                                     |
++----------------------------------------------------------------------------------------------+
+| |lab011|                                                                                     |
++----------------------------------------------------------------------------------------------+
+
+
+
+
+
 
 Task 3: Testing the WAF Policy & Reviewing Event Data  
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -558,8 +573,6 @@ Sample Blocking Response Page to be copied::
 .. |lab009| image:: _static//lab1-009.png
    :width: 800px
 .. |lab010| image:: _static//lab1-010.png
-   :width: 800px
-.. |lab011| image:: _static//lab1-011.png
    :width: 800px
 .. |lab012| image:: _static//lab1-012.png
    :width: 800px
