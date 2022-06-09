@@ -8,10 +8,10 @@ the email address used for course registration and its associated spam folders t
 invitation email has been received.  If you have not received an email, please contact a member
 of the lab team.
  
-The F5 Distributed Cloud Console, where a majprity of all lab tasks will be conducted, is a SaaS
-based control-plane for services that provide a GUI and API for managing network, security, and
+The F5 Distributed Cloud Console, where a majority of all lab tasks will be conducted, is a SaaS
+based control-plane for services which provides a GUI and API for managing network, security, and
 compute services. The F5 Distributed Cloud Console can manage "sites" in existing on-premises,
-private data centers and sites in AWS, Azure, and GCP public cloud environments.
+private data centers and sites within AWS, Azure, and GCP public cloud environments.
 
 Task 1: Lab Environment
 ~~~~~~~~~~~~~~~~~~~~~~~
@@ -38,27 +38,27 @@ Cloud Console.  You should have received an email with an invitation to access a
 Cloud Tenant. The email will come from **no-reply@volterramails.io**.
 
 The name of the F5 Distributed Cloud tenant that we will be using for this lab is **f5-xc-lab-sec**
-Additionally, the following are important configuration elements of this lab and will be used
+Additionally, the following are key configuration elements for this lab and will be used
 throughout the lab tasks that follow.
 
-* F5 Distributed Cloud Console: **https://f5-xc-lab-sec.console.ves.volterra.io/**
+* F5 Distributed Cloud Console: <https://f5-xc-lab-sec.console.ves.volterra.io/>
 * Delegated Domain: **lab-sec.f5demos.com**
 
 After following the invitation email's instructions to **Update Password**, proceed to the first
 step below to access the F5 Distributed Cloud Lab Tenant. 
 
 +----------------------------------------------------------------------------------------------+
-| 1. Please log into F5 Distributed Cloud Lab Tenant with your user ID (email) and password.   |
+| 1. Please log into the F5 Distributed Cloud Lab Tenant with your user ID (email) & password. |
 |                                                                                              |
-|    **https://f5-xc-lab-sec.console.ves.volterra.io/**                                        |
+|    <https://f5-xc-lab-sec.console.ves.volterra.io/>                                          |
 |                                                                                              |
 | 2. When you first login, accept the Lab tenant EULA. Click the check box and then click      |
 |                                                                                              |
 |    **Accept and Agree**.                                                                     |
 |                                                                                              |
-| 3. Select all work domain roles and click **Next** to see all the various configuration      |
+| 3. Select all work domain roles and click **Next** to see various configuration options.     |
 |                                                                                              |
-|    options. Roles can be changed any time later if desired.                                  |
+|    Roles can be changed any time later if desired.                                           |
 |                                                                                              |
 | 4. Click the **Advanced** skill level to expose more menu options and then click **Get**     |
 |                                                                                              |
@@ -105,15 +105,15 @@ step below to access the F5 Distributed Cloud Lab Tenant.
 |                                                                                              |
 |    performed through the course of this lab.                                                 |
 |                                                                                              |
-| 9. Click on the **Select Service** in the left-hand navigation. In the fly out navigation,   |
+| 9. Click on the **Select Service** in the left-hand navigation. In the resulting fly out     |
 |                                                                                              |
-|    click **Load Balancers**.                                                                 |
+|    navigation, click **Load Balancers**.                                                     |
 |                                                                                              |
 | 10. In the **Load Balancers** configuration screen observe the URL. In the URI path, locate  |
 |                                                                                              |
 |    the **<adjective-animal>** namespace that you have been assigned. It will be located in   |
 |                                                                                              |
-|    the portion of the URI path between *//namespaces//* and *//sites//* as shown in this     |
+|    the portion of the URI path between */namespaces/* and */sites/* as shown in this         |
 |                                                                                              |
 |    example **…/namespaces/<namespace>/sites/…**. Note the namespace as it will be used       |
 |                                                                                              |
