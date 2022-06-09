@@ -25,9 +25,13 @@ The following steps will allow you to deploy and advertise a globally available 
 steps will define an application, register its DNS and assign a target as an origin.
 
 +----------------------------------------------------------------------------------------------+
-| 1. In the left-hand navigation use the **Select Service** and click the **Load Balancers**   |
+| 1. Following the introduction instructions, you should now be in the **Load Balancers**      |
 |                                                                                              |
-|    icon/tile.                                                                                |
+|    configuration window. If for some reason you are not in the **Load Balancers** window, use|
+|                                                                                              |
+|    the **Select Service** in the left-hand navigation, and click **Load Balancers** as shown |
+|                                                                                              |
+|    in the Introduction, Task 2, Step 9.                                                      |
 |                                                                                              |
 | 2. In the left-hand navigation expand **Manage** and click **Load Balancers > HTTP Load**    |
 |                                                                                              |
@@ -40,8 +44,6 @@ steps will define an application, register its DNS and assign a target as an ori
 |                                                                                              |
 |    *have administrative access.*                                                             |
 +----------------------------------------------------------------------------------------------+
-| |lab000|                                                                                     |
-|                                                                                              |
 | |lab001|                                                                                     |
 |                                                                                              |
 | |lab002|                                                                                     |
@@ -279,7 +281,9 @@ review the generated event data to make additional configuration changes.
 |    link provided for your respective load balancer.                                          |
 |                                                                                              |
 | .. note::                                                                                    |
-|    *As you have not run, many request summary analytics may not be available yet.*           |
+|    *As you have not run many requests, summary analytics may not be available in the*        |
+|                                                                                              |
+|    *dashboard view yet.*                                                                     |
 +----------------------------------------------------------------------------------------------+
 | |lab027|                                                                                     |
 +----------------------------------------------------------------------------------------------+
@@ -290,6 +294,11 @@ review the generated event data to make additional configuration changes.
 | 6. Change the viewable time period from 5 minutes (default) to **1 hour** by selecting the   |
 |                                                                                              |
 |    dropdown shown, click **Last 1 hour** then clicking **Apply**.                            |
+|                                                                                              |
+| .. note::                                                                                    |
+|    *Security Event data may take 15-20 seconds to populate in the Console. Please force a*   |
+|                                                                                              |
+|    *refresh using the **Refresh** icon next to the Time Period selection in step 6.*         |
 +----------------------------------------------------------------------------------------------+
 | |lab028|                                                                                     |
 +----------------------------------------------------------------------------------------------+
@@ -373,7 +382,7 @@ review the generated event data to make additional configuration changes.
 |                                                                                              |
 |     filter. You can expand and review the request as desired using the **arrow** icon.       |
 |                                                                                              |
-| 19. Under the **Actions** column, click on the three Action dots.                            |
+| 19. Under the **Actions** column, click on the three Action dots (Scroll to right).          |
 +----------------------------------------------------------------------------------------------+
 | |lab039|                                                                                     |
 +----------------------------------------------------------------------------------------------+
@@ -525,122 +534,120 @@ Sample Blocking Response Page to be copied::
 +----------------------------------------------------------------------------------------------+
 | **End of Lab 1:**  This concludes Lab 1, feel free to review and test the configuration.     |
 |                                                                                              |
-| A bried presentation will be shared prior to the beginning of Lab 2.                         |
+| A brief presentation will be shared prior to the beginning of Lab 2.                         |
 +----------------------------------------------------------------------------------------------+
 | |labend|                                                                                     |
 +----------------------------------------------------------------------------------------------+
 
-.. |lab000| image:: media/lab1-000.png
+.. |lab001| image:: _static//lab1-001.png
    :width: 800px
-.. |lab001| image:: media/lab1-001.png
+.. |lab002| image:: _static//lab1-002.png
    :width: 800px
-.. |lab002| image:: media/lab1-002.png
+.. |lab003| image:: _static//lab1-003.png
    :width: 800px
-.. |lab003| image:: media/lab1-003.png
+.. |lab004| image:: _static//lab1-004.png
    :width: 800px
-.. |lab004| image:: media/lab1-004.png
+.. |lab005| image:: _static//lab1-005.png
    :width: 800px
-.. |lab005| image:: media/lab1-005.png
+.. |lab006| image:: _static//lab1-006.png
    :width: 800px
-.. |lab006| image:: media/lab1-006.png
+.. |lab007| image:: _static//lab1-007.png
    :width: 800px
-.. |lab007| image:: media/lab1-007.png
+.. |lab008| image:: _static//lab1-008.png
    :width: 800px
-.. |lab008| image:: media/lab1-008.png
+.. |lab009| image:: _static//lab1-009.png
    :width: 800px
-.. |lab009| image:: media/lab1-009.png
+.. |lab010| image:: _static//lab1-010.png
    :width: 800px
-.. |lab010| image:: media/lab1-010.png
+.. |lab011| image:: _static//lab1-011.png
    :width: 800px
-.. |lab011| image:: media/lab1-011.png
+.. |lab012| image:: _static//lab1-012.png
    :width: 800px
-.. |lab012| image:: media/lab1-012.png
+.. |lab013| image:: _static//lab1-013.png
    :width: 800px
-.. |lab013| image:: media/lab1-013.png
+.. |lab014| image:: _static//lab1-014.png
    :width: 800px
-.. |lab014| image:: media/lab1-014.png
+.. |lab015| image:: _static//lab1-015.png
    :width: 800px
-.. |lab015| image:: media/lab1-015.png
+.. |lab016| image:: _static//lab1-016.png
    :width: 800px
-.. |lab016| image:: media/lab1-016.png
+.. |lab017| image:: _static//lab1-017.png
    :width: 800px
-.. |lab017| image:: media/lab1-017.png
+.. |lab018| image:: _static//lab1-018.png
    :width: 800px
-.. |lab018| image:: media/lab1-018.png
+.. |lab019| image:: _static//lab1-019.png
    :width: 800px
-.. |lab019| image:: media/lab1-019.png
+.. |lab020| image:: _static//lab1-020.png
    :width: 800px
-.. |lab020| image:: media/lab1-020.png
+.. |lab021| image:: _static//lab1-021.png
    :width: 800px
-.. |lab021| image:: media/lab1-021.png
+.. |lab022| image:: _static//lab1-022.png
    :width: 800px
-.. |lab022| image:: media/lab1-022.png
+.. |lab023| image:: _static//lab1-023.png
    :width: 800px
-.. |lab023| image:: media/lab1-023.png
+.. |lab024| image:: _static//lab1-024.png
    :width: 800px
-.. |lab024| image:: media/lab1-024.png
+.. |lab025| image:: _static//lab1-025.png
    :width: 800px
-.. |lab025| image:: media/lab1-025.png
+.. |lab026| image:: _static//lab1-026.png
    :width: 800px
-.. |lab026| image:: media/lab1-026.png
+.. |lab027| image:: _static//lab1-027.png
    :width: 800px
-.. |lab027| image:: media/lab1-027.png
+.. |lab028| image:: _static//lab1-028.png
    :width: 800px
-.. |lab028| image:: media/lab1-028.png
+.. |lab029| image:: _static//lab1-029.png
    :width: 800px
-.. |lab029| image:: media/lab1-029.png
+.. |lab030| image:: _static//lab1-030.png
    :width: 800px
-.. |lab030| image:: media/lab1-030.png
+.. |lab031| image:: _static//lab1-031.png
    :width: 800px
-.. |lab031| image:: media/lab1-031.png
+.. |lab032| image:: _static//lab1-032.png
    :width: 800px
-.. |lab032| image:: media/lab1-032.png
+.. |lab033| image:: _static//lab1-033.png
    :width: 800px
-.. |lab033| image:: media/lab1-033.png
+.. |lab034| image:: _static//lab1-034.png
    :width: 800px
-.. |lab034| image:: media/lab1-034.png
+.. |lab035| image:: _static//lab1-035.png
    :width: 800px
-.. |lab035| image:: media/lab1-035.png
+.. |lab036| image:: _static//lab1-036.png
    :width: 800px
-.. |lab036| image:: media/lab1-036.png
+.. |lab037| image:: _static//lab1-037.png
    :width: 800px
-.. |lab037| image:: media/lab1-037.png
+.. |lab038| image:: _static//lab1-038.png
    :width: 800px
-.. |lab038| image:: media/lab1-038.png
+.. |lab039| image:: _static//lab1-039.png
    :width: 800px
-.. |lab039| image:: media/lab1-039.png
+.. |lab040| image:: _static//lab1-040.png
    :width: 800px
-.. |lab040| image:: media/lab1-040.png
+.. |lab041| image:: _static//lab1-041.png
    :width: 800px
-.. |lab041| image:: media/lab1-041.png
+.. |lab042| image:: _static//lab1-042.png
    :width: 800px
-.. |lab042| image:: media/lab1-042.png
+.. |lab043| image:: _static//lab1-043.png
    :width: 800px
-.. |lab043| image:: media/lab1-043.png
+.. |lab044| image:: _static//lab1-044.png
    :width: 800px
-.. |lab044| image:: media/lab1-044.png
+.. |lab045| image:: _static//lab1-045.png
    :width: 800px
-.. |lab045| image:: media/lab1-045.png
+.. |lab046| image:: _static//lab1-046.png
    :width: 800px
-.. |lab046| image:: media/lab1-046.png
+.. |lab047| image:: _static//lab1-047.png
    :width: 800px
-.. |lab047| image:: media/lab1-047.png
+.. |lab048| image:: _static//lab1-048.png
    :width: 800px
-.. |lab048| image:: media/lab1-048.png
+.. |lab049| image:: _static//lab1-049.png
    :width: 800px
-.. |lab049| image:: media/lab1-049.png
+.. |lab050| image:: _static//lab1-050.png
    :width: 800px
-.. |lab050| image:: media/lab1-050.png
+.. |lab051| image:: _static//lab1-051.png
    :width: 800px
-.. |lab051| image:: media/lab1-051.png
+.. |lab052| image:: _static//lab1-052.png
    :width: 800px
-.. |lab052| image:: media/lab1-052.png
+.. |lab053| image:: _static//lab1-053.png
    :width: 800px
-.. |lab053| image:: media/lab1-053.png
+.. |lab054| image:: _static//lab1-054.png
    :width: 800px
-.. |lab054| image:: media/lab1-054.png
+.. |lab055| image:: _static//lab1-055.png
    :width: 800px
-.. |lab055| image:: media/lab1-055.png
-   :width: 800px
-.. |labend| image:: media/labend.png
+.. |labend| image:: _static//labend.png
    :width: 800px
